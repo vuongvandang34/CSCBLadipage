@@ -48,4 +48,24 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // TikTok Facade Pattern (Click to load iframe)
+    const tiktokFacades = document.querySelectorAll('.tiktok-facade');
+    tiktokFacades.forEach(facade => {
+        facade.addEventListener('click', function() {
+            const videoId = this.getAttribute('data-video-id');
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', `https://www.tiktok.com/embed/v2/${videoId}`);
+            iframe.setAttribute('allow', 'autoplay; encrypted-media');
+            iframe.setAttribute('allowfullscreen', '');
+            
+            // Clear the facade content
+            this.innerHTML = '';
+            this.classList.remove('tiktok-facade');
+            this.style.background = '#000'; // Reset background
+            
+            // Append iframe
+            this.appendChild(iframe);
+        });
+    });
 });

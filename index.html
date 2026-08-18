@@ -154,18 +154,22 @@
             <p class="fade-in-up delay-1" style="margin-bottom: 40px;">Check out what creators and travelers are saying about us!</p>
             
             <div class="video-grid">
-                <!-- TikTok Videos Embed with Iframe for 9:16 aspect ratio -->
-                <div class="video-wrapper fade-in-up delay-1">
-                    <iframe src="https://www.tiktok.com/embed/v2/7597108400014544159" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <!-- TikTok Videos Embed (Facade Pattern to avoid overload) -->
+                <div class="video-wrapper fade-in-up delay-1 tiktok-facade" data-video-id="7597108400014544159">
+                    <div class="play-button">▶</div>
+                    <span class="facade-text">Watch on TikTok</span>
                 </div>
-                <div class="video-wrapper fade-in-up delay-2">
-                    <iframe src="https://www.tiktok.com/embed/v2/7507214852423765256" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="video-wrapper fade-in-up delay-2 tiktok-facade" data-video-id="7507214852423765256">
+                    <div class="play-button">▶</div>
+                    <span class="facade-text">Watch on TikTok</span>
                 </div>
-                <div class="video-wrapper fade-in-up delay-3">
-                    <iframe src="https://www.tiktok.com/embed/v2/7657605511847759126" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="video-wrapper fade-in-up delay-3 tiktok-facade" data-video-id="7657605511847759126">
+                    <div class="play-button">▶</div>
+                    <span class="facade-text">Watch on TikTok</span>
                 </div>
-                <div class="video-wrapper fade-in-up delay-4">
-                    <iframe src="https://www.tiktok.com/embed/v2/7626052014392347937" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="video-wrapper fade-in-up delay-4 tiktok-facade" data-video-id="7626052014392347937">
+                    <div class="play-button">▶</div>
+                    <span class="facade-text">Watch on TikTok</span>
                 </div>
             </div>
         </div>
