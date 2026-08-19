@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CSCB 2 Vintage Eyewear & Clothing - The premium vintage shop, thrift store, and eyewear vintage destination in Hanoi Old Quarter. Find the best vintage near me at 55 Mã Mây.">
+    <meta name="description" content="CSCB 2 Vintage Eyewear & Clothing - Premier vintage shop, thrift store, and eyewear vintage destination in Hanoi Old Quarter. Find rare vintage near me at 55 Mã Mây.">
+    <meta name="keywords" content="vintage shop, thrift shop, vintage near me, vintage, eyewear vintage, thrift store, vintage store, hanoi vintage shop, cscb vintage">
+    <meta name="author" content="CSCB Vintage">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="CSCB 2 Vintage Eyewear & Clothing | Premium Vintage Shop & Thrift Store Hanoi">
+    <meta property="og:description" content="Tucked away at 55 Mã Mây, Hanoi Old Quarter. Curated vintage frames, rare eyewear, and timeless clothing.">
+    <meta property="og:image" content="anh-khong-gian/DSC02598.jpg">
+
     <title>CSCB 2 Vintage Eyewear & Clothing | Premium Vintage Shop & Thrift Store Hanoi</title>
     
     <link rel="stylesheet" href="styles.css">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap" rel="stylesheet">
     
     <!-- LocalBusiness Schema Markup for Local SEO -->
     <script type="application/ld+json">
@@ -18,13 +28,14 @@
       "@context": "https://schema.org",
       "@type": "ClothingStore",
       "name": "CSCB 2 Vintage Eyewear & Clothing",
-      "image": "https://images.unsplash.com/photo-1550246140-5119ae4790b8?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://cscbvintage.com/anh-khong-gian/DSC02598.jpg",
       "@id": "https://cscbvintage.com/#location2",
       "url": "https://cscbvintage.com",
       "telephone": "+84366412206",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "55 Mã Mây, Phố cổ Hà Nội",
+        "streetAddress": "55 Mã Mây, Phố Cổ",
         "addressLocality": "Hoàn Kiếm",
         "addressRegion": "Hà Nội",
         "postalCode": "100000",
@@ -50,164 +61,411 @@
         "closes": "22:00"
       },
       "sameAs": [
-        "https://www.facebook.com/cscbvintage"
+        "https://www.instagram.com/cscb_cuasochoiboi/",
+        "https://www.instagram.com/cscb.window/",
+        "https://www.tiktok.com/@cuasochoiboi.vintagevn",
+        "https://www.tripadvisor.com.vn/Attraction_Review-g27501570-d33473188-Reviews-CSCB_2_Vintage_Eyewear_Clothing-Hoan_Kiem_Hanoi.html"
       ],
       "department": {
         "@type": "Store",
         "name": "CSCB Vintage Eyewear & Clothing (Cơ sở 1)",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "53 Mã Mây",
+          "streetAddress": "53 Mã Mây, Phố Cổ",
           "addressLocality": "Hoàn Kiếm",
           "addressRegion": "Hà Nội",
           "addressCountry": "VN"
-        }
+        },
+        "telephone": "+84366412206"
       }
     }
     </script>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Sticky Navigation -->
+    <header class="header">
         <div class="container nav-container">
-            <a href="#" class="logo">CSCB VINTAGE</a>
-            <ul class="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#collections">Collections</a></li>
-                <li><a href="#locations">Locations</a></li>
-            </ul>
-        </div>
-    </nav>
+            <a href="#" class="logo">
+                <span class="logo-main">CSCB VINTAGE</span>
+                <span class="logo-sub">EYEWEAR & CLOTHING</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#collections" class="nav-link">Collections</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#locations" class="nav-link">Locations</a></li>
+                </ul>
+            </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content fade-in-up">
-            <h1>Curated <span class="highlight">Eyewear Vintage</span> & Clothing</h1>
-            <p>Your premier <strong>vintage shop</strong> and <strong>thrift store</strong> located in the heart of Hanoi's Old Quarter.</p>
-            <a href="#locations" class="btn btn-primary">Find Vintage Near Me</a>
+            <div class="nav-actions">
+                <a href="tel:0366412206" class="btn btn-outline-nav">
+                    <span>📞 0366412206</span>
+                </a>
+                <a href="#locations" class="btn btn-primary-nav">Visit 55 Mã Mây</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- About Section -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-badge fade-in-up">
+                <span class="badge-dot"></span> HANOI OLD QUARTER'S CURATED VINTAGE GEM
+            </div>
+            <h1 class="fade-in-up delay-1">
+                Curated <span class="text-highlight">Eyewear Vintage</span> & Clothing
+            </h1>
+            <p class="hero-desc fade-in-up delay-2">
+                Your premier <strong>vintage shop</strong> and <strong>thrift store</strong> in Hanoi. Discover rare vintage frames, authentic sunglasses, and timeless retro fashion tucked away at <strong>55 Mã Mây</strong>.
+            </p>
+            <div class="hero-buttons fade-in-up delay-3">
+                <a href="#locations" class="btn btn-hero-primary">Find Vintage Near Me 📍</a>
+                <a href="#gallery" class="btn btn-hero-secondary">Explore Catalog</a>
+            </div>
+            
+            <div class="hero-features fade-in-up delay-4">
+                <div class="hero-stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Rare Vintage Frames</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number">55 Mã Mây</span>
+                    <span class="stat-label">Old Quarter Hanoi</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number">4.9 ★</span>
+                    <span class="stat-label">TripAdvisor & Google</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Exact Text as Requested) -->
     <section id="about" class="section about-section">
         <div class="container">
             <div class="about-grid">
                 <div class="about-text slide-in-left">
-                    <h2>More Than Just a <span class="highlight">Thrift Shop</span></h2>
-                    <p>Welcome to <strong>CSCB 2 Vintage Eyewear & Clothing</strong>. Tucked away at 55 Mã Mây, we are a carefully curated <strong>vintage store</strong> specializing in rare, unique eyewear and timeless clothing pieces.</p>
-                    <p>Whether you're hunting for iconic <strong>vintage</strong> frames or premium retro fashion, our collection is handpicked to ensure the highest quality for true vintage enthusiasts.</p>
+                    <div class="section-tag">AUTHENTIC RETRO EXPERIENCE</div>
+                    <h2>More Than Just a <span class="text-highlight">Thrift Shop</span></h2>
+                    
+                    <p class="about-highlight">
+                        Welcome to <strong>CSCB 2 Vintage Eyewear & Clothing</strong>. Tucked away at <strong>55 Mã Mây</strong>, we are a carefully curated <strong>vintage store</strong> specializing in rare, unique eyewear and timeless clothing pieces.
+                    </p>
+                    
+                    <p>
+                        Whether you're hunting for iconic <strong>vintage</strong> frames or premium retro fashion, our collection is handpicked to ensure the highest quality for true vintage enthusiasts.
+                    </p>
+
+                    <div class="about-keypoints">
+                        <div class="keypoint">
+                            <div class="keypoint-icon">👓</div>
+                            <div>
+                                <h4>Curated Eyewear</h4>
+                                <p>Authentic vintage frames from classic eras, fully preserved & fitted.</p>
+                            </div>
+                        </div>
+                        <div class="keypoint">
+                            <div class="keypoint-icon">🧥</div>
+                            <div>
+                                <h4>Handpicked Apparel</h4>
+                                <p>Unique jackets, shirts, and timeless retro garments from around the globe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="tel:0366412206" class="btn btn-accent">Call Store: 0366412206</a>
+                        <a href="https://www.instagram.com/cscb_cuasochoiboi/" target="_blank" rel="noopener" class="btn btn-outline">Follow @cscb_cuasochoiboi</a>
+                    </div>
                 </div>
-                <div class="about-image slide-in-right">
-                    <img src="anh khong gian/DSC02598.jpg" alt="Vintage Eyewear Collection at CSCB">
+
+                <div class="about-visual slide-in-right">
+                    <div class="visual-stack">
+                        <div class="visual-card main-img-card">
+                            <img src="anh-khong-gian/DSC02598.jpg" alt="CSCB Vintage Eyewear Display 55 Ma May" loading="lazy">
+                            <div class="visual-caption">📍 CSCB 2 - 55 Mã Mây, Hoàn Kiếm</div>
+                        </div>
+                        <div class="visual-card sub-img-card">
+                            <img src="anh-khong-gian/DSC02605.jpg" alt="CSCB Vintage Store Interior Space" loading="lazy">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Collections / Keywords Section -->
-    <section id="collections" class="section collections-section bg-light">
+    <!-- Collections / Keyword Features -->
+    <section id="collections" class="section collections-section">
         <div class="container text-center">
+            <div class="section-tag">SIGNATURE CATEGORIES</div>
             <h2 class="fade-in-up">What We Offer</h2>
+            <p class="section-subtitle fade-in-up delay-1">Explore our three specialized categories crafted for lovers of genuine retro aesthetics.</p>
+
             <div class="features-grid">
                 <div class="feature-card fade-in-up delay-1">
-                    <div class="icon">👓</div>
+                    <div class="card-icon-wrapper">👓</div>
                     <h3>Eyewear Vintage</h3>
                     <p>Rare, unique frames from decades past. Carefully preserved and ready to wear.</p>
+                    <span class="card-tag">Curated Frames & Shades</span>
                 </div>
-                <div class="feature-card fade-in-up delay-2">
-                    <div class="icon">🧥</div>
+
+                <div class="feature-card featured fade-in-up delay-2">
+                    <div class="popular-badge">Top Pick</div>
+                    <div class="card-icon-wrapper">🧥</div>
                     <h3>Premium Thrift Store</h3>
                     <p>High-quality, curated clothing. Not your average thrift shop; every piece tells a story.</p>
+                    <span class="card-tag">Handpicked Retro Apparel</span>
                 </div>
+
                 <div class="feature-card fade-in-up delay-3">
-                    <div class="icon">📍</div>
+                    <div class="card-icon-wrapper">📍</div>
                     <h3>Vintage Near Me</h3>
-                    <p>Conveniently located in Hoan Kiem, Hanoi. The best local spot for retro fashion.</p>
+                    <p>Conveniently located in Hoàn Kiếm, Hanoi Old Quarter. The best local spot for retro fashion lovers.</p>
+                    <span class="card-tag">55 Mã Mây & 53 Mã Mây</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery Section (Actual User Images) -->
     <section id="gallery" class="section gallery-section">
-        <div class="container text-center">
-            <h2 class="fade-in-up">Our Curated Collection</h2>
-            <p class="fade-in-up delay-1" style="margin-bottom: 40px;">Explore our rare and unique vintage finds.</p>
+        <div class="container">
+            <div class="gallery-header text-center">
+                <div class="section-tag">CURATED SHOWCASE</div>
+                <h2 class="fade-in-up">Our Curated Collection & Store Atmosphere</h2>
+                <p class="section-subtitle fade-in-up delay-1">A glimpse into our eyewear frames, vintage apparel, and retro space at 55 Mã Mây.</p>
+            </div>
+
             <div class="gallery-grid">
-                <div class="gallery-item fade-in-up"><img src="Pictures/DSC02500.jpg" alt="Vintage Eyewear 1" loading="lazy"></div>
-                <div class="gallery-item fade-in-up delay-1"><img src="Pictures/DSC02527.jpg" alt="Vintage Eyewear 2" loading="lazy"></div>
-                <div class="gallery-item fade-in-up delay-2"><img src="Pictures/DSC02535.jpg" alt="Vintage Eyewear 3" loading="lazy"></div>
-                <div class="gallery-item fade-in-up delay-3"><img src="anh khong gian/DSC02605.jpg" alt="CSCB Store Interior" loading="lazy"></div>
-                <div class="gallery-item fade-in-up"><img src="Pictures/DSC02559.jpg" alt="Vintage Eyewear 4" loading="lazy"></div>
-                <div class="gallery-item fade-in-up delay-1"><img src="Pictures/DSC02572.jpg" alt="Vintage Eyewear 5" loading="lazy"></div>
-                <div class="gallery-item fade-in-up delay-2"><img src="Pictures/DSC02584.jpg" alt="Vintage Eyewear 6" loading="lazy"></div>
-                <div class="gallery-item fade-in-up delay-3"><img src="anh khong gian/DSC02606.jpg" alt="CSCB Store Shelves" loading="lazy"></div>
+                <div class="gallery-item fade-in-up">
+                    <img src="Pictures/DSC02500.jpg" alt="Vintage Eyewear Frame 1" loading="lazy">
+                    <div class="gallery-overlay"><span>Vintage Frame Detail</span></div>
+                </div>
+                <div class="gallery-item fade-in-up delay-1">
+                    <img src="Pictures/DSC02527.jpg" alt="Vintage Eyewear Frame 2" loading="lazy">
+                    <div class="gallery-overlay"><span>Classic Sunglasses</span></div>
+                </div>
+                <div class="gallery-item fade-in-up delay-2">
+                    <img src="Pictures/DSC02535.jpg" alt="Vintage Eyewear Frame 3" loading="lazy">
+                    <div class="gallery-overlay"><span>Retro Eyewear</span></div>
+                </div>
+                <div class="gallery-item fade-in-up delay-3">
+                    <img src="anh-khong-gian/DSC02606.jpg" alt="CSCB Vintage Shelves Display" loading="lazy">
+                    <div class="gallery-overlay"><span>Store Glasses Shelf</span></div>
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="Pictures/DSC02559.jpg" alt="Vintage Eyewear Frame 4" loading="lazy">
+                    <div class="gallery-overlay"><span>Signature Acetate Frame</span></div>
+                </div>
+                <div class="gallery-item fade-in-up delay-1">
+                    <img src="Pictures/DSC02572.jpg" alt="Vintage Eyewear Frame 5" loading="lazy">
+                    <div class="gallery-overlay"><span>Gold Rim Retro Shades</span></div>
+                </div>
+                <div class="gallery-item fade-in-up delay-2">
+                    <img src="Pictures/DSC02584.jpg" alt="Vintage Eyewear Frame 6" loading="lazy">
+                    <div class="gallery-overlay"><span>Tortoise Pattern Frame</span></div>
+                </div>
+                <div class="gallery-item fade-in-up delay-3">
+                    <img src="anh-khong-gian/DSC02611.jpg" alt="CSCB Vintage Interior Vibe" loading="lazy">
+                    <div class="gallery-overlay"><span>Vintage Store Vibe</span></div>
+                </div>
+            </div>
+
+            <!-- Instagram QR Code & Catalog Card -->
+            <div class="qr-banner fade-in-up">
+                <div class="qr-info">
+                    <h3>📱 View Live Daily Catalog On Instagram</h3>
+                    <p>Scan the QR code or follow <strong>@CSCB.WINDOW</strong> & <strong>@cscb_cuasochoiboi</strong> for new arrivals, stories, and drop alerts.</p>
+                    <div class="qr-links">
+                        <a href="https://www.instagram.com/cscb_cuasochoiboi/" target="_blank" rel="noopener" class="btn btn-accent">Open @cscb_cuasochoiboi</a>
+                        <a href="https://www.tiktok.com/@cuasochoiboi.vintagevn" target="_blank" rel="noopener" class="btn btn-outline">TikTok Channel</a>
+                    </div>
+                </div>
+                <div class="qr-box">
+                    <div class="qr-code-wrapper">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://www.instagram.com/cscb.window/&color=1a1614&bgcolor=fbf8f2" alt="QR Code Instagram @CSCB.WINDOW" class="qr-image" loading="lazy">
+                    </div>
+                    <span class="qr-handle">@CSCB.WINDOW</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Media & Reviews Section -->
-    <section id="reviews" class="section reviews-section bg-light">
+    <!-- Social Media & Creator Reviews Section -->
+    <section id="reviews" class="section reviews-section">
         <div class="container text-center">
-            <h2 class="fade-in-up">As Seen On TikTok</h2>
-            <p class="fade-in-up delay-1" style="margin-bottom: 40px;">Check out what creators and travelers are saying about us!</p>
-            
-            <div class="video-grid">
-                <!-- TikTok Videos Embed (Facade Pattern to avoid overload) -->
-                <div class="video-wrapper fade-in-up delay-1 tiktok-facade" data-video-id="7597108400014544159">
-                    <div class="play-button">▶</div>
-                    <span class="facade-text">Watch on TikTok</span>
+            <div class="section-tag">VIRAL ON SOCIAL MEDIA</div>
+            <h2 class="fade-in-up">As Seen On TikTok & YouTube</h2>
+            <p class="section-subtitle fade-in-up delay-1">See what travel creators, fashion vloggers, and visitors say about CSCB Vintage.</p>
+
+            <!-- YouTube Video Embeds (100% Reliable & Embed-safe) -->
+            <div class="youtube-grid">
+                <div class="youtube-card fade-in-up">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube-nocookie.com/embed/1odlOsCKoBs" title="Hanoi Vintage Store Crawl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Hanoi Vintage Store Crawl</h4>
+                        <p>Exploring the hidden vintage shops of Hanoi Old Quarter</p>
+                    </div>
                 </div>
-                <div class="video-wrapper fade-in-up delay-2 tiktok-facade" data-video-id="7507214852423765256">
-                    <div class="play-button">▶</div>
-                    <span class="facade-text">Watch on TikTok</span>
+
+                <div class="youtube-card fade-in-up delay-1">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube-nocookie.com/embed/u-XuvT9OBOQ" title="Thrift Shopping in Hanoi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h4>Thrift Shopping & Hidden Gems</h4>
+                        <p>Discovering CSCB Vintage Eyewear & Fashion</p>
+                    </div>
                 </div>
-                <div class="video-wrapper fade-in-up delay-3 tiktok-facade" data-video-id="7657605511847759126">
-                    <div class="play-button">▶</div>
-                    <span class="facade-text">Watch on TikTok</span>
-                </div>
-                <div class="video-wrapper fade-in-up delay-4 tiktok-facade" data-video-id="7626052014392347937">
-                    <div class="play-button">▶</div>
-                    <span class="facade-text">Watch on TikTok</span>
-                </div>
+            </div>
+
+            <!-- TikTok Viral Creators Grid -->
+            <div class="tiktok-section-title fade-in-up">
+                <h3>Viral TikTok Reviews & Try-Ons</h3>
+                <p>Click any creator review below to watch on TikTok</p>
+            </div>
+
+            <div class="tiktok-grid">
+                <a href="https://www.tiktok.com/@megan.k.jackson/video/7597108400014544159" target="_blank" rel="noopener" class="tiktok-card fade-in-up">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@megan.k.jackson</div>
+                    <p class="review-quote">"The coolest hidden vintage eyewear spot in Hanoi Old Quarter!"</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@knox_balbastro/video/7507214852423765256" target="_blank" rel="noopener" class="tiktok-card fade-in-up delay-1">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@knox_balbastro</div>
+                    <p class="review-quote">"Walked through a barbershop to find vintage eyewear heaven!"</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@itsmikeandamy/video/7657605511847759126" target="_blank" rel="noopener" class="tiktok-card fade-in-up delay-2">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@itsmikeandamy</div>
+                    <p class="review-quote">"Must-visit thrift & vintage shopping spot when in Hanoi."</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@vu.webp/video/7626052014392347937" target="_blank" rel="noopener" class="tiktok-card fade-in-up delay-3">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@vu.webp</div>
+                    <p class="review-quote">"Trải nghiệm tiệm kính vintage độc lạ nhất phố Mã Mây."</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@ayoohalle/video/7475596035478310190" target="_blank" rel="noopener" class="tiktok-card fade-in-up">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@ayoohalle</div>
+                    <p class="review-quote">"Vintage sunglasses hunting at 55 Mã Mây."</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@korkierey/video/7565347283433278738" target="_blank" rel="noopener" class="tiktok-card fade-in-up delay-1">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@korkierey</div>
+                    <p class="review-quote">"Found the most unique frames for my style!"</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@atha.rafif/video/7592191959792372999" target="_blank" rel="noopener" class="tiktok-card fade-in-up delay-2">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@atha.rafif</div>
+                    <p class="review-quote">"Hanoi thrift guide: CSCB Vintage store tour."</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@carmenntravels/video/7627862021815438600" target="_blank" rel="noopener" class="tiktok-card fade-in-up delay-3">
+                    <div class="tiktok-icon">🎵</div>
+                    <div class="creator-name">@carmenntravels</div>
+                    <p class="review-quote">"Best vintage store recommendation for travelers."</p>
+                    <span class="tiktok-btn">Watch Video ↗</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Locations & Map Section -->
+    <!-- Locations & Google Maps Section -->
     <section id="locations" class="section location-section">
         <div class="container">
             <div class="location-header text-center fade-in-up">
-                <h2>Visit Our Stores</h2>
-                <p>We operate two distinct locations right next to each other on Mã Mây street.</p>
+                <div class="section-tag">STORE LOCATOR</div>
+                <h2>Visit Our Two Locations in Hanoi Old Quarter</h2>
+                <p class="section-subtitle">Located next door to each other on the historic Mã Mây street.</p>
             </div>
             
             <div class="location-grid">
-                <!-- Location 2 (Main Focus) -->
+                <!-- Location 2 (Primary Focus) -->
                 <div class="location-card primary-location slide-in-up">
-                    <div class="badge">Featured Store</div>
+                    <div class="badge">Primary Flagship</div>
                     <h3>CSCB 2 Vintage Eyewear & Clothing</h3>
-                    <p class="address">📍 55 Mã Mây, Phố Cổ Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam</p>
-                    <p class="phone">📞 <a href="tel:0366412206">0366412206</a></p>
-                    <p class="desc">Our flagship experience focusing on exclusive collections and personalized styling.</p>
+                    <p class="store-subtitle">Curated Eyewear & Vintage Clothing Flagship</p>
+                    
+                    <div class="store-details">
+                        <p class="detail-row">
+                            <span class="detail-icon">📍</span>
+                            <strong>Địa chỉ:</strong> 55 Mã Mây, Phố Cổ Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam
+                        </p>
+                        <p class="detail-row">
+                            <span class="detail-icon">📞</span>
+                            <strong>Hotline / Zalo:</strong> <a href="tel:0366412206" class="phone-link">0366412206</a>
+                        </p>
+                        <p class="detail-row">
+                            <span class="detail-icon">⏰</span>
+                            <strong>Giờ mở cửa:</strong> 09:00 - 22:00 (Hàng ngày)
+                        </p>
+                    </div>
+
+                    <div class="map-actions">
+                        <a href="https://maps.google.com/?q=55+Mã+Mây,+Hoàn+Kiếm,+Hà+Nội" target="_blank" rel="noopener" class="btn btn-accent btn-block">Chỉ Đường Google Maps (55 Mã Mây) 📍</a>
+                    </div>
                     
                     <div class="map-container">
-                        <!-- Generic Maps embed using address search for 55 Ma May -->
-                        <iframe src="https://maps.google.com/maps?q=55%20M%C3%A3%20M%C3%A2y,%20H%C3%A0%20N%E1%BB%99i&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=55%20M%C3%A3%20M%C3%A2y,%20H%C3%A0%20N%E1%BB%99i&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
 
                 <!-- Location 1 -->
                 <div class="location-card secondary-location slide-in-up delay-2">
+                    <div class="badge-secondary">Original Store</div>
                     <h3>CSCB Vintage Eyewear & Clothing</h3>
-                    <p class="address">📍 53 Mã Mây, Phố Cổ, Hoàn Kiếm, Hà Nội, Việt Nam</p>
-                    <p class="phone">📞 <a href="tel:0366412206">0366412206</a></p>
-                    <p class="desc">The original store that started it all.</p>
+                    <p class="store-subtitle">The Original Heritage Store</p>
+                    
+                    <div class="store-details">
+                        <p class="detail-row">
+                            <span class="detail-icon">📍</span>
+                            <strong>Địa chỉ:</strong> 53 Mã Mây, Phố Cổ, Hoàn Kiếm, Hà Nội, Việt Nam
+                        </p>
+                        <p class="detail-row">
+                            <span class="detail-icon">📞</span>
+                            <strong>Hotline:</strong> <a href="tel:0366412206" class="phone-link">0366412206</a>
+                        </p>
+                        <p class="detail-row">
+                            <span class="detail-icon">⏰</span>
+                            <strong>Giờ mở cửa:</strong> 09:00 - 22:00 (Hàng ngày)
+                        </p>
+                    </div>
+
+                    <div class="map-actions">
+                        <a href="https://maps.google.com/?q=53+Mã+Mây,+Hoàn+Kiếm,+Hà+Nội" target="_blank" rel="noopener" class="btn btn-outline btn-block">Chỉ Đường Google Maps (53 Mã Mây) 📍</a>
+                    </div>
                     
                     <div class="map-container">
-                        <!-- Provided Map Embed for CS1 -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.939076178549!2d105.85090747674809!3d21.035123580615835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab55d11c216b%3A0x9eaa7a2d65ea89d!2sCSCB%20Vintage%20Eyewear%20%26%20Clothing%20-%20Hanoi!5e0!3m2!1svi!2s!4v1786948788789!5m2!1svi!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.939076178549!2d105.85090747674809!3d21.035123580615835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab55d11c216b%3A0x9eaa7a2d65ea89d!2sCSCB%20Vintage%20Eyewear%20%26%20Clothing%20-%20Hanoi!5e0!3m2!1svi!2s!4v1786948788789!5m2!1svi!2s" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
                 </div>
             </div>
@@ -217,18 +475,46 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
-            <h2>CSCB VINTAGE</h2>
-            <p>Your destination for authentic <strong>vintage</strong> & <strong>thrift store</strong> finds.</p>
+            <div class="footer-brand">
+                <span class="footer-logo">CSCB VINTAGE</span>
+                <p class="footer-tagline">Hanoi Old Quarter's Dedicated Vintage Eyewear & Clothing Boutique</p>
+            </div>
             
-            <div class="social-links" style="margin: 20px 0;">
-                <a href="https://www.instagram.com/cscb_cuasochoiboi/" target="_blank" style="margin: 0 10px; color: var(--secondary-color); text-decoration: underline;">Instagram</a> |
-                <a href="https://www.tiktok.com/@cuasochoiboi.vintagevn?_r=1&_t=ZS-98yXl5weUJ2" target="_blank" style="margin: 0 10px; color: var(--secondary-color); text-decoration: underline;">TikTok</a> |
-                <a href="https://www.tripadvisor.com.vn/Attraction_Review-g27501570-d33473188-Reviews-CSCB_2_Vintage_Eyewear_Clothing-Hoan_Kiem_Hanoi.html" target="_blank" style="margin: 0 10px; color: var(--secondary-color); text-decoration: underline;">TripAdvisor</a>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/cscb_cuasochoiboi/" target="_blank" rel="noopener" class="social-pill">
+                    <span>📷 Instagram @cscb_cuasochoiboi</span>
+                </a>
+                <a href="https://www.instagram.com/cscb.window/" target="_blank" rel="noopener" class="social-pill">
+                    <span>📷 Catalog @cscb.window</span>
+                </a>
+                <a href="https://www.tiktok.com/@cuasochoiboi.vintagevn" target="_blank" rel="noopener" class="social-pill">
+                    <span>🎵 TikTok @cuasochoiboi.vintagevn</span>
+                </a>
+                <a href="https://www.tripadvisor.com.vn/Attraction_Review-g27501570-d33473188-Reviews-CSCB_2_Vintage_Eyewear_Clothing-Hoan_Kiem_Hanoi.html" target="_blank" rel="noopener" class="social-pill">
+                    <span>🦉 TripAdvisor Review</span>
+                </a>
             </div>
 
-            <p>&copy; 2024 CSCB Vintage Eyewear & Clothing. All Rights Reserved.</p>
+            <div class="footer-nap">
+                <p><strong>Cơ sở 2 (Flagship):</strong> 55 Mã Mây, Phố Cổ Hà Nội, Hoàn Kiếm, Hà Nội | 📞 <a href="tel:0366412206">0366412206</a></p>
+                <p><strong>Cơ sở 1:</strong> 53 Mã Mây, Phố Cổ, Hoàn Kiếm, Hà Nội | 📞 <a href="tel:0366412206">0366412206</a></p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CSCB Vintage Eyewear & Clothing. All Rights Reserved. Local SEO Optimized.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Floating Quick Action Bar for Mobile -->
+    <div class="floating-cta">
+        <a href="tel:0366412206" class="floating-btn call-btn">
+            <span>📞 Gọi Ngay</span>
+        </a>
+        <a href="https://maps.google.com/?q=55+Mã+Mây,+Hoàn+Kiếm,+Hà+Nội" target="_blank" rel="noopener" class="floating-btn map-btn">
+            <span>📍 Chỉ Đường (55 Mã Mây)</span>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
